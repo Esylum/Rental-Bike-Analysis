@@ -60,7 +60,7 @@ hari_df['bulan'] = hari_df['bulan'].map({
     1: 'Januari', 2:'Februari', 3:'Maret',
     4:'April', 5:'Mei', 6:'Juni', 7:'Juli',
     8:'Agustus', 9:'September', 10:'Oktober',
-    11:'November', 10:'Desember'
+    11:'November', 12:'Desember'
 })
 
 hari_df['musim'] = hari_df['musim'].map({
@@ -136,8 +136,8 @@ start_date, end_date = st.date_input(
     min_value= min_date,
     max_value= max_date,
     value=[min_date, max_date])
-main_df = hari_df[(hari_df['tanggal'] >= str(start_date)) &
-                (hari_df['tanggal'] <= str(end_date))]
+main_df = hari_df[(pd.to_datetime(hari_df['tanggal']) >= start_date) &
+                 (pd.to_datetime(hari_df['tanggal']) <= end_date)]
 
 # Menyiapkan berbagai dataframe
 rental_harian_df = create_rental_harian_df(main_df)
