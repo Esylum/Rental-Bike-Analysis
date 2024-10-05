@@ -87,7 +87,7 @@ def create_rental_harian_weekday_df(df):
 
 #Menyiapkan rental_harian_holiday_df
 def create_rental_harian_holiday_df(df):
-  daily_registered_rent_df = df.groupby(by='tanggal').agg({
+  rental_harian_holiday_df = df.groupby(by='tanggal').agg({
       'holiday': 'sum'
       }).reset_index()
   return rental_harian_holiday_df
