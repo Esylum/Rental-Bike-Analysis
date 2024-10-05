@@ -106,8 +106,8 @@ def create_rental_musiman_df(df):
 
 # Menyiapkan rental_cuaca_df
 def create_rental_cuaca_df(df):
-  rental_cuaca_df = df.groupby(by='musim')[['weekday', 'workingday', 'holiday']].sum().reset_index()
-  return rental_cuaca_df
+    rental_cuaca_df = df.groupby(by='cuaca')[['weekday', 'workingday', 'holiday', 'jumlah']].sum().reset_index()
+    return rental_cuaca_df
 
 # Menyiapkan monthly_rent_df
 def create_rental_bulanan_df(df):
@@ -137,8 +137,8 @@ start_date, end_date = st.date_input(
     max_value= max_date,
     value=[min_date, max_date])
 
-main_df = hari_df[(pd.to_datetime(hari_df['tanggal']).dt.date >= start_date) &
-                 (pd.to_datetime(hari_df['tanggal']).dt.date <= end_date)]
+main_df = hari_df['tanggal'] = pd.to_datetime(hari_df['tanggal']).dt.date >= start_date) &
+                 hari_df['tanggal'] = pd.to_datetime(hari_df['tanggal'])
 
 # Menyiapkan berbagai dataframe
 rental_harian_df = create_rental_harian_df(main_df)
