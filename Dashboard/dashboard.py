@@ -167,7 +167,7 @@ with col2:
 
 with col3:
     reate_rental_harian_workingday = reate_rental_harian_workingday_df['workingday'].sum()
-    st.metric('Workingday User', value= reate_rental_harian_workingday)
+    st.metric('Workingday User', value= rental_rental_harian_workingday)
 
 with col4:
   rental_harian_total = rental_harian_df['jumlah'].sum()
