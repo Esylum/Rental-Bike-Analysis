@@ -16,11 +16,11 @@ import streamlit as st
 sns.set(style='dark')
 
 #Menyiapkan data hari_df
-hari_df = pd.read_csv("https://raw.githubusercontent.com/Esylum/Rental-Bike-Analysis/refs/heads/main/day.csv")
+hari_df = pd.read_csv("Dashboard/day.csv")
 hari_df.head()
 
 #Menyiapkan data jam_df
-jam_df = pd.read_csv("https://raw.githubusercontent.com/Esylum/Rental-Bike-Analysis/refs/heads/main/hour.csv")
+jam_df = pd.read_csv("Dashboard/hour.csv")
 jam_df.head()
 
 #Menghapus kolom tidak perlu pada hari_df
