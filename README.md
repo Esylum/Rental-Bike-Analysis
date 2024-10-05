@@ -1,9 +1,9 @@
 ## Bike Rentals - Final Project Data Analytics 
-This is a final project from Dicoding for the "Belajar Analisis Data Dengan Python" course, aimed at analyzing and creating a dashboard from the bike sharing dataset. In the notebook file, I included the steps I took for the analysis, covering Data Wrangling, Exploratory Data Analysis, and Data Visualization. Additionally, I created a dashboard using Streamlit, which you can access by clicking the link in the right sidebar or [here](https://bike-sharing-rentals-dicoding-final-project-yyw4s7kdygiumzfwtw.streamlit.app/).
+Ini adalah tugas akhir dari Dicoding untuk kursus “Belajar Analisis Data Dengan Python”, yang bertujuan untuk menganalisis dan membuat dasbor dari dataset bike sharing. Dalam file buku catatan, saya menyertakan langkah-langkah yang saya ambil untuk analisis, yang meliputi Data Wrangling, Analisis Data Eksplorasi, dan Visualisasi Data. Selain itu, saya membuat dasbor menggunakan Streamlit, yang dapat Anda akses dengan mengeklik tautan di bilah sisi kanan or [here]([https://bike-sharing-rentals-dicoding-final-project-yyw4s7kdygiumzfwtw.streamlit.app/](https://rental-bike-analysis-bwarzxylrupjtwvk9mfmou.streamlit.app/)).
 
-For more information, such as the background of this dataset, its
-characteristics, file structures, and more, please refer to the Readme
-file. Therefore, I won't elaborate further here.
+Untuk informasi lebih lanjut, seperti latar belakang dataset ini, karakteristik
+karakteristiknya, struktur file, dan banyak lagi, silakan lihat file Readme
+file Readme. Oleh karena itu, saya tidak akan menguraikan lebih lanjut di sini.
 
 1. File Structure
 ```
@@ -26,38 +26,35 @@ file. Therefore, I won't elaborate further here.
     └───requirements.txt
 ```
 
-2. Project work cycle
-    1. Data Wrangling:
-        - Gathering data
-        - Assessing data
-        - Cleaning data
-    2. Exploratory Data Analysis:
-        - Defined business questions for data exploration
-        - Create Data exploration
-    3. Data Visualization:
-        - Create Data Visualization that answer business questions 
-    4. Dashboard: 
-        - Set up the DataFrame which will be used
-        - Make filter components on the dashboard 
-        - Complete the dashboard with various data visualizations
+2. Siklus kerja proyek
+    1. Penguraian Data:
+        - Mengumpulkan data
+        - Menilai data
+        - Membersihkan data
+    2. Analisis Data Eksplorasi:
+        - Menentukan pertanyaan bisnis untuk eksplorasi data
+        - Membuat eksplorasi data
+    3. Visualisasi Data:
+        - Membuat Visualisasi Data yang menjawab pertanyaan bisnis 
+    4. Dasbor: 
+        - Mengatur DataFrame yang akan digunakan
+        - Membuat komponen-komponen filter pada dashboard 
+        - Lengkapi dashboard dengan berbagai visualisasi data
 
-Note: Numbers 1 to 3 are in the dicoding-collection-exercise and number
-4 is in dashboard.
+3. Memulai
+Rent_Data_Analysis.ipynb
+ 1. Unduh proyek ini.
+ 2. Buka IDE favorit Anda seperti Jupyter Notebook atau Google Colaboratory (tapi di sini saya akan menggunakan Google Colab). 
+ 3. Buatlah sebuah Notebook Baru.
+ 4. Unggah dan pilih file dengan ekstensi .ipynb.
+ 5. Sambungkan ke runtime yang dihosting.
+ 6. Terakhir, jalankan sel kode.
 
-3. Getting Started
-Data_Project_Analysis_Bike_Sharing_Dataset.ipynb
- 1. Download this project.
- 2. Open your favorite IDE like Jupyter Notebook or Google Colaboratory (but in here I will use Google Colab). 
- 3. Create a New Notebook.
- 4. Upload and select the file with .ipynb extension.
- 5. Connect to hosted runtime.
- 6. Lastly, run the code cells.
-
-Dashboard/dashboard.py 
- 1. Download this project.
- 2. Install the Streamlit in your terminal or command prompt using pip install streamlit. Install another libraries like pandas, numpy, scipy,
-matplotlib, and seaborn if you haven't.
- 3. Please note, don't move the csv file because it acts a data source. keep it in one folder as
+Dasbor/dashboard.py 
+ 1. Unduh proyek ini.
+ 2. Instal Streamlit di terminal atau prompt perintah Anda menggunakan pip install streamlit. Instal pustaka-pustaka lain seperti pandas, numpy, scipy,
+matplotlib, dan seaborn jika Anda belum melakukannya.
+ 3. Harap diperhatikan, jangan memindahkan berkas csv karena ia bertindak sebagai sumber data. simpan dalam satu folder sebagai
 dashboard.py
- 4. Open your VSCode and run the file by clicking the
-terminal and write it streamlit run dashboard.py.
+ 4. Buka VSCode Anda dan jalankan berkas tersebut dengan mengeklik tombol
+terminal dan tuliskan streamlit run dashboard.py.
