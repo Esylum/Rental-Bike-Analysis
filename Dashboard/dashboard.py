@@ -136,8 +136,9 @@ start_date, end_date = st.date_input(
     min_value= min_date,
     max_value= max_date,
     value=[min_date, max_date])
-main_df = hari_df[(pd.to_datetime(hari_df['tanggal']) >= start_date) &
-                 (pd.to_datetime(hari_df['tanggal']) <= end_date)]
+
+main_df = hari_df[(pd.to_datetime(hari_df['tanggal']).dt.date >= start_date) &
+                 (pd.to_datetime(hari_df['tanggal']).dt.date <= end_date)]
 
 # Menyiapkan berbagai dataframe
 rental_harian_df = create_rental_harian_df(main_df)
