@@ -80,7 +80,7 @@ def create_rental_harian_df(df):
 
 #Menyiapkan rental_harian_weekday_df
 def create_rental_harian_weekday_df(df):
-  rental_harian_weekday_df = df.groupby(by='tanggal').gg({
+  rental_harian_weekday_df = df.groupby(by='tanggal').agg({
       'weekday': 'sum'
       }).reset_index()
   return rental_harian_weekday_df
