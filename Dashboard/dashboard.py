@@ -155,7 +155,7 @@ st.header('Bike Rental Dashboard 🚲')
 
 # Membuat jumlah penyewaan harian
 st.subheader('Rental Harian')
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
     rental_harian_weekday = rental_harian_weekday['weekday'].sum()
