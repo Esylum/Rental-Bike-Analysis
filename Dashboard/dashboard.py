@@ -199,7 +199,9 @@ fig, ax = plt.subplots(figsize=(16, 8))
 sns.barplot(x='musim', y='Value', hue='Type', data=hari_df_melted)
 
 for index, row in rental_musiman_df.iterrows():
-    ax.text(index, row['weekday', 'workingday', 'holiday'], str(row['weekday', 'workingday', 'holiday']), ha='center', va='bottom', fontsize=12)
+    ax.text(index, row['weekday'], str(row['weekday']), ha='center', va='bottom', fontsize=12)
+    ax.text(index, row['workingday'], str(row['workingday']), ha='center', va='bottom', fontsize=12)
+    ax.text(index, row['holiday'], str(row['holiday']), ha='center', va='bottom', fontsize=12)
 
 ax.set_xlabel(None)
 ax.set_ylabel(None)
