@@ -77,17 +77,21 @@ with col1:
 
 # Monthly Rentals
 st.subheader('Rental Bulanan')
-hari_df_melted = pd.melt(hari_df, id_vars=['bulan'], value_vars=['jumlah'], var_name='Type', value_name='Value')
 
-fig, ax = plt.subplots(figsize=(24, 8))
-sns.barplot(x='bulan', y='Value', data=hari_df_melted)
-
-for index, row in rental_bulanan_df['jumlah'].iteritems():
-    ax.text(index, row + 1, str(row), ha='center', va='bottom', fontsize=12)
-
-ax.tick_params(axis='x', labelsize=25, rotation=45)
-ax.tick_params(axis='y', labelsize=20)
-st.pyplot(fig)
+# Check if 'jumlah' column exists in rental_bulanan_df
+if 'jumlah' in rental_bulanan_df.columns:
+    fig, ax = plt.subplots(figsize=(24, 8))
+    
+    # Bar plot for monthly rentals
+    sns.barplot(x=rental_bulanan_df.index, y='jumlah', data=rental_bulanan_df)
+    
+    # Add text labels on bars
+    for index, row in rental_bulanan_df.iterrows():
+        ax.text(index, row['jumlah'] + 1, str(row['jumlah']), ha='center', va='bottom', fontsize=12)
+    
+    ax.tick_params(axis='x', labelsize=25, rotation=45)
+    ax.tick_params(axis='y', labelsize=20)
+    st.pyplot(fig)
 
 # Seasonal Rentals
 st.subheader('Rental Musiman')
