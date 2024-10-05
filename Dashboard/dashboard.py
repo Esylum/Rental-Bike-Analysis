@@ -158,7 +158,7 @@ st.subheader('Rental Harian')
 col1, col2, col3, col4 = st.columns(4)
 
 with col1:
-    rental_harian_weekday = rental_harian_weekday['weekday'].sum()
+    rental_harian_weekday = rental_harian_weekday_df['weekday'].sum()
     st.metric('Weekday User', value= rental_harian_weekday)
 
 with col2:
