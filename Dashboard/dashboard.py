@@ -72,7 +72,7 @@ def main():
     # Heatmap correlation
     correlation_heatmap(hari_df)
 
-    # Add subheaders for seasonal, daily, and monthly rentals
+    # Add subheaders for seasonal and monthly rentals
     st.subheader("Perbandingan Rental Musiman")
     melted_musim = pd.melt(hari_df, id_vars=['musim'], value_vars=['weekday', 'workingday', 'holiday'],
                            var_name='Type', value_name='Value')
@@ -82,11 +82,6 @@ def main():
     melted_bulan = pd.melt(hari_df, id_vars=['bulan'], value_vars=['weekday', 'workingday', 'holiday'],
                            var_name='Type', value_name='Value')
     barplot_rentals(melted_bulan, 'bulan', 'Type', 'Perbandingan rental bulanan weekday, workingday, dan holiday', 'Bulan')
-
-    st.subheader("Perbandingan Rental Harian (Weekday, Workingday, Holiday)")
-    melted_hari = pd.melt(hari_df, id_vars=['tanggal'], value_vars=['weekday', 'workingday', 'holiday'],
-                          var_name='Type', value_name='Value')
-    barplot_rentals(melted_hari, 'tanggal', 'Type', 'Perbandingan rental harian weekday, workingday, dan holiday', 'Tanggal')
 
     st.write("### Pengaruh Cuaca terhadap Rental")
     melted_cuaca = pd.melt(hari_df, id_vars=['cuaca'], value_vars=['weekday', 'workingday', 'holiday'],
