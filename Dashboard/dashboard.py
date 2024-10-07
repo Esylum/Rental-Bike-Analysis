@@ -69,34 +69,29 @@ def main():
     # Load data
     hari_df, jam_df = load_data()
     
-    st.write("### Data Overview")
-    st.write(hari_df.head())
-
-    st.write("### Data Information")
-    st.write(hari_df.info())
-
-    st.write("### Jumlah data duplikat: ", hari_df.duplicated().sum())
-    st.write("### Descriptive Statistics")
-    st.write(hari_df.describe())
-
     # Heatmap correlation
     correlation_heatmap(hari_df)
 
-    # Data transformation for visualizations
-    st.write("### Perbandingan Bulanan (Weekday, Workingday, Holiday)")
+    # Add subheaders for seasonal, daily, and monthly rentals
+    st.subheader("Perbandingan Rental Musiman")
+    melted_musim = pd.melt(hari_df, id_vars=['musim'], value_vars=['weekday', 'workingday', 'holiday'],
+                           var_name='Type', value_name='Value')
+    barplot_rentals(melted_musim, 'musim', 'Type', 'Pengaruh Musim terhadap Rental', 'Musim')
+
+    st.subheader("Perbandingan Rental Bulanan (Weekday, Workingday, Holiday)")
     melted_bulan = pd.melt(hari_df, id_vars=['bulan'], value_vars=['weekday', 'workingday', 'holiday'],
                            var_name='Type', value_name='Value')
     barplot_rentals(melted_bulan, 'bulan', 'Type', 'Perbandingan rental bulanan weekday, workingday, dan holiday', 'Bulan')
+
+    st.subheader("Perbandingan Rental Harian (Weekday, Workingday, Holiday)")
+    melted_hari = pd.melt(hari_df, id_vars=['tanggal'], value_vars=['weekday', 'workingday', 'holiday'],
+                          var_name='Type', value_name='Value')
+    barplot_rentals(melted_hari, 'tanggal', 'Type', 'Perbandingan rental harian weekday, workingday, dan holiday', 'Tanggal')
 
     st.write("### Pengaruh Cuaca terhadap Rental")
     melted_cuaca = pd.melt(hari_df, id_vars=['cuaca'], value_vars=['weekday', 'workingday', 'holiday'],
                            var_name='Type', value_name='Value')
     barplot_rentals(melted_cuaca, 'cuaca', 'Type', 'Pengaruh cuaca terhadap rental pada weekday, workingday, dan holiday', 'Cuaca')
-
-    st.write("### Pengaruh Musim terhadap Rental")
-    melted_musim = pd.melt(hari_df, id_vars=['musim'], value_vars=['weekday', 'workingday', 'holiday'],
-                           var_name='Type', value_name='Value')
-    barplot_rentals(melted_musim, 'musim', 'Type', 'Pengaruh musim terhadap rental pada weekday, workingday, dan holiday', 'Musim')
 
     # Add copyright info
     st.write("\n\n© Brigade Mahendra")
