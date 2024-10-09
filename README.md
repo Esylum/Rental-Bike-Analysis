@@ -1,5 +1,5 @@
 ## Bike Rentals - Final Project Data Analytics 
-Ini adalah tugas akhir dari Dicoding untuk kursus “Belajar Analisis Data Dengan Python”, yang bertujuan untuk menganalisis dan membuat dasbor dari dataset bike sharing. Dalam file buku catatan, saya menyertakan langkah-langkah yang saya ambil untuk analisis, yang meliputi Data Wrangling, Analisis Data Eksplorasi, dan Visualisasi Data. Selain itu, saya membuat dasbor menggunakan Streamlit, yang dapat Anda akses dengan mengeklik tautan di bilah sisi kanan or [here]([https://bike-sharing-rentals-dicoding-final-project-yyw4s7kdygiumzfwtw.streamlit.app/](https://rental-bike-analysis-bwarzxylrupjtwvk9mfmou.streamlit.app/)).
+Ini adalah tugas akhir dari Dicoding untuk kursus “Belajar Analisis Data Dengan Python”, yang bertujuan untuk menganalisis dan membuat dasbor dari dataset bike sharing. Dalam file buku catatan, saya menyertakan langkah-langkah yang saya ambil untuk analisis, yang meliputi Data Wrangling, Analisis Data Eksplorasi, dan Visualisasi Data. Selain itu, saya membuat dasbor menggunakan Streamlit, yang dapat Anda akses dengan mengeklik tautan di bilah sisi kanan or [here]((https://rental-bike-analysis-bwarzxylrupjtwvk9mfmou.streamlit.app/)).
 
 Untuk informasi lebih lanjut, seperti latar belakang dataset ini, karakteristik
 karakteristiknya, struktur file, dan banyak lagi, silakan lihat file Readme
