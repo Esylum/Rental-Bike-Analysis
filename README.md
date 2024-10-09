@@ -17,14 +17,11 @@ file Readme. Oleh karena itu, saya tidak akan menguraikan lebih lanjut di sini.
     | ├───day.csv
     | └───hour.csv
     ├───screenshots
-    | ├───Rental Dashboard & Monthly Rentals.png
-    | ├───Seasonly Rentals.png
-    | └───Weatherly Rentals.png
-    | └───Weekday, Working Day, and Holiday Rentals.png
-    ├───Data_Project_Analysis_Bike_Sharing_Dataset.ipynb
-    ├───Data_Project_Analysis_Bike_Sharing_Dataset.py
+    ├───Rent_Data_Analysis.ipynb
+    ├───rent_data_analysis.py
     ├───README.md
-    └───requirements.txt
+    ├───requirements.txt
+    └───url.txt
 ```
 
 2. Siklus kerja proyek
