@@ -11,6 +11,7 @@ file Readme. Oleh karena itu, saya tidak akan menguraikan lebih lanjut di sini.
     | ├───Esylum Rent.png
     | ├───dashboard.py
     | └───day.csv
+    | └───hour.csv
     ├───Bike-sharing-dataset
     | ├───Readme.txt
     | ├───day.csv
