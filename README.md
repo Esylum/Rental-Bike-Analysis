@@ -16,7 +16,6 @@ file Readme. Oleh karena itu, saya tidak akan menguraikan lebih lanjut di sini.
     | ├───Readme.txt
     | ├───day.csv
     | └───hour.csv
-    ├───screenshots
     ├───Rent_Data_Analysis.ipynb
     ├───rent_data_analysis.py
     ├───README.md
