@@ -8,7 +8,7 @@ file Readme. Oleh karena itu, saya tidak akan menguraikan lebih lanjut di sini.
 1. File Structure
 ```
     ├───Dashboard
-    | ├───AqilRent.png
+    | ├───Esylum Rent.png
     | ├───dashboard.py
     | └───day.csv
     ├───Bike-sharing-dataset
